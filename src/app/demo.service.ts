@@ -1,14 +1,21 @@
-import { inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DemoService {
 
-  #httpClient = inject(HttpClient);
+  private counter = new BehaviorSubject<number>(0);
 
-  getData() {
-    return this.#httpClient.get(`https://64dc395ee64a8525a0f64b8b.mockapi.io/sales`);
+  get counter$() {
+    return this.counter.asObservable();
+  }
+
+  increment(): void {
+    // if (this.counter.value === 10) {
+    //   this.counter.complete();
+    // } else {
+    //   this.counter.next(this.counter.value + 1);
+    // }
+    this.counter.next(this.counter.value + 1);
   }
 }
