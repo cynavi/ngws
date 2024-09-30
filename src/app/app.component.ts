@@ -1,44 +1,42 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { DemoService } from './demo.service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AsyncPipe, RouterLink],
+  providers: [
+    DemoService
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
 
-  observable$!: Observable<number | string>;
+  demoService = inject(DemoService);
+  counter!: number;
+  // subscription!: Subscription;
+  unsubscribe = new Subject<void>();
 
   ngOnInit(): void {
-    this.observable$ = new Observable(subscriber => {
-      subscriber.next(1);
-
-      setTimeout(() => {
-        subscriber.next('second')
-      }, 3000);
-
-      setTimeout(() => {
-        subscriber.next('third')
-      }, 0);
-
-      subscriber.next('first');
-
-      // subscriber.error('error occured');
-      subscriber.complete();
-
-      // subscriber.next('after error')
-      subscriber.next('after complete')
+    this.demoService.counter$.pipe(
+      takeUntil(this.unsubscribe)
+    ).subscribe(c => {
+      this.counter = c;
+      console.log('from first ', c);
     });
-
-    setTimeout(() => {
-      this.observable$.subscribe(val => console.log(val));
-    }, 10000)
-
-
   }
 
+  onIncrement(): void {
+    this.demoService.increment();
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+    // this.subscription.unsubscribe();
+  }
 }

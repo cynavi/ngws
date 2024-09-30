@@ -1,0 +1,239 @@
+{
+  "columns": [
+    {
+      "name": "id",
+      "label": "Id",
+      "type": "number"
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "text"
+    },
+    {
+      "name": "country",
+      "label": "Country",
+      "type": "number"
+    },
+    {
+      "name": "quantity",
+      "label": "Quantity",
+      "type": "number"
+    },
+    {
+      "name": "date",
+      "label": "Date",
+      "type": "date"
+    },
+    {
+      "name": "unitPrice",
+      "label": "Unit Price",
+      "type": "number"
+    },
+    {
+      "name": "username",
+      "label": "Username",
+      "type": "text"
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "description": "Fantastic Frozen Tuna",
+      "country": "Croatia",
+      "quantity": -1,
+      "date": "2024-09-24",
+      "unitPrice": "241.00",
+      "username": "Kelton.Kuvalis35"
+    },
+    {
+      "id": 2,
+      "description": "Licensed Concrete Towels",
+      "country": "Somalia",
+      "quantity": 5,
+      "date": "2024-09-24",
+      "unitPrice": "469.00",
+      "username": "Leta.McCullough70"
+    },
+    {
+      "id": 3,
+      "description": "Awesome Metal Chicken",
+      "country": "Eritrea",
+      "quantity": -1,
+      "date": "2024-09-24",
+      "unitPrice": "374.00",
+      "username": "Floyd_Jaskolski41"
+    },
+    {
+      "id": 4,
+      "description": "Tasty Fresh Bike",
+      "country": "Cote d'Ivoire",
+      "quantity": 1,
+      "date": "2024-09-24",
+      "unitPrice": "249.00",
+      "username": "Jasen90"
+    },
+    {
+      "id": 5,
+      "description": "Awesome Bronze Hat",
+      "country": "Sweden",
+      "quantity": -2,
+      "date": "2024-09-24",
+      "unitPrice": "833.00",
+      "username": "Teagan86"
+    },
+    {
+      "id": 6,
+      "description": "Luxurious Metal Shirt",
+      "country": "Peru",
+      "quantity": -3,
+      "date": "2024-09-24",
+      "unitPrice": "738.00",
+      "username": "Rhea.Stroman"
+    },
+    {
+      "id": 7,
+      "description": "Intelligent Wooden Pants",
+      "country": "Gambia",
+      "quantity": -3,
+      "date": "2024-09-24",
+      "unitPrice": "725.00",
+      "username": "Kelli50"
+    },
+    {
+      "id": 8,
+      "description": "Intelligent Cotton Ball",
+      "country": "Greece",
+      "quantity": 0,
+      "date": "2024-09-24",
+      "unitPrice": "615.00",
+      "username": "Janet.McCullough46"
+    },
+    {
+      "id": 9,
+      "description": "Modern Concrete Sausages",
+      "country": "Costa Rica",
+      "quantity": -2,
+      "date": "2024-09-24",
+      "unitPrice": "526.00",
+      "username": "Raheem.Spinka27"
+    },
+    {
+      "id": 10,
+      "description": "Small Cotton Table",
+      "country": "Sao Tome and Principe",
+      "quantity": 0,
+      "date": "2024-09-24",
+      "unitPrice": "284.00",
+      "username": "Nayeli.Abbott"
+    },
+    {
+      "id": 11,
+      "description": "Practical Frozen Pizza",
+      "country": "Cook Islands",
+      "quantity": 2,
+      "date": "2024-09-24",
+      "unitPrice": "676.00",
+      "username": "Lexus85"
+    },
+    {
+      "id": 12,
+      "description": "Refined Granite Chicken",
+      "country": "Sudan",
+      "quantity": 3,
+      "date": "2024-09-24",
+      "unitPrice": "978.00",
+      "username": "Lulu.Muller86"
+    },
+    {
+      "id": 13,
+      "description": "Elegant Cotton Bacon",
+      "country": "Virgin Islands, U.S.",
+      "quantity": -4,
+      "date": "2024-09-24",
+      "unitPrice": "92.00",
+      "username": "Drake.Dicki"
+    },
+    {
+      "id": 14,
+      "description": "Unbranded Bronze Pizza",
+      "country": "Falkland Islands (Malvinas)",
+      "quantity": 1,
+      "date": "2024-09-24",
+      "unitPrice": "876.00",
+      "username": "Felicity78"
+    },
+    {
+      "id": 15,
+      "description": "Modern Plastic Gloves",
+      "country": "Pakistan",
+      "quantity": 0,
+      "date": "2024-09-24",
+      "unitPrice": "267.00",
+      "username": "Thaddeus12"
+    },
+    {
+      "id": 16,
+      "description": "Incredible Steel Chicken",
+      "country": "Wallis and Futuna",
+      "quantity": 0,
+      "date": "2024-09-24",
+      "unitPrice": "739.00",
+      "username": "Elvie_Kuhlman37"
+    },
+    {
+      "id": 17,
+      "description": "Tasty Soft Keyboard",
+      "country": "Turkey",
+      "quantity": 3,
+      "date": "2024-09-24",
+      "unitPrice": "124.00",
+      "username": "Lindsey_Boehm"
+    },
+    {
+      "id": 18,
+      "description": "Ergonomic Cotton Soap",
+      "country": "Congo",
+      "quantity": 2,
+      "date": "2024-09-24",
+      "unitPrice": "640.00",
+      "username": "Chasity.Hartmann"
+    },
+    {
+      "id": 19,
+      "description": "Tasty Metal Chicken",
+      "country": "Ukraine",
+      "quantity": 5,
+      "date": "2024-09-24",
+      "unitPrice": "271.00",
+      "username": "Amari_Gerhold27"
+    },
+    {
+      "id": 20,
+      "description": "Fantastic Cotton Fish",
+      "country": "Niue",
+      "quantity": 0,
+      "date": "2024-09-24",
+      "unitPrice": "915.00",
+      "username": "Jovany_DAmore1"
+    },
+    {
+      "id": 21,
+      "country": "Nepal",
+      "date": "2024-09-24T15:29:13.415Z",
+      "description": "Goldstar G10",
+      "quantity": 2,
+      "unitPrice": 1200,
+      "username": "cynavi"
+    },
+    {
+      "id": 21,
+      "country": "Nepal",
+      "date": "2024-09-24T15:31:15.603Z",
+      "description": "Goldstar G10",
+      "quantity": 2,
+      "unitPrice": 1200,
+      "username": "cynavi"
+    }
+  ]
+}

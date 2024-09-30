@@ -1,0 +1,31 @@
+<!--<p-table-->
+<!--  (onSort)=""-->
+<!--  [columns]=""-->
+<!--  [sortMode]="'multiple'"-->
+<!--  [value]=""-->
+<!--&gt;-->
+<!--  <ng-template [inferHeader]="" let-columns pTemplate="header">-->
+<!--    <tr>-->
+<!--      @for (col of columns; track col.name; let index = $index) {-->
+<!--        <th [pSortableColumn]="col.name">-->
+<!--          <span>{{ col.label }}</span>-->
+<!--          <p-sortIcon [field]="col.name"/>-->
+<!--        </th>-->
+<!--      }-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+
+<!--  <ng-template let-columns="columns" let-sale pTemplate="body">-->
+<!--    <tr>-->
+<!--      @for (col of columns; track col.name) {-->
+<!--        <td>-->
+<!--          @if (col.type == 'date') {-->
+<!--            {{ sale[col.name] | date }}-->
+<!--          } @else {-->
+<!--            {{ sale[col.name] }}-->
+<!--          }-->
+<!--        </td>-->
+<!--      }-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+<!--</p-table>-->
